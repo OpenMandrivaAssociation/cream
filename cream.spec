@@ -48,8 +48,8 @@ cp docs-html/*.html %buildroot/%_datadir/vim/cream/docs-html/
 cp docs-html/*.png %buildroot/%_datadir/vim/cream/docs-html/
 cp filetypes/*.vim %buildroot/%_datadir/vim/cream/filetypes/
 cp help/*.txt %buildroot/%_datadir/vim/cream/help/  
-cp spelldicts/cream-spell-dict-eng-s*.vim %buildroot/%_datadir/vim/cream/spelldicts/
-cp spelldicts/cream-spell-dict.vim %buildroot/%_datadir/vim/cream/spelldicts/
+#cp spelldicts/cream-spell-dict-eng-s*.vim %buildroot/%_datadir/vim/cream/spelldicts/
+#cp spelldicts/cream-spell-dict.vim %buildroot/%_datadir/vim/cream/spelldicts/
 
 mkdir -p %buildroot/%_bindir
 cp cream %buildroot/%_bindir/
