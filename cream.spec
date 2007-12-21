@@ -12,6 +12,7 @@ URL:		http://cream.sourceforge.net/
 License:	GPL
 Group:		Editors
 
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ImageMagick
 BuildRequires:  desktop-file-utils
 Requires:	vim-X11
