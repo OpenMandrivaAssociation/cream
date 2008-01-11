@@ -61,10 +61,6 @@ cp cream.desktop %buildroot/%_datadir/applications/
 #cp cream.svg %buildroot/%_iconsdir/
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="Cream" longtitle="Simplified graphical Vim" section="More Applications/Editors" xdg="true"
-EOF
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -94,7 +90,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%name
 %{_datadir}/vim/%name
 %{_datadir}/applications/%name.desktop
-%{_menudir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
