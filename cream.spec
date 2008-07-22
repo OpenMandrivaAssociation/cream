@@ -1,6 +1,6 @@
 %define name	cream
 %define version	0.39
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name: 	 	%{name}
 Summary: 	User-friendly face for Vim
