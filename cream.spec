@@ -13,7 +13,7 @@ License:	GPL
 Group:		Editors
 
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRequires:  desktop-file-utils
 Requires:	vim-X11
 BuildArch:	noarch
