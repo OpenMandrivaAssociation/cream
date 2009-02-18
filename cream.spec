@@ -1,6 +1,6 @@
 %define name	cream
-%define version	0.39
-%define release %mkrel 3
+%define version	0.41
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	User-friendly face for Vim
@@ -17,8 +17,8 @@ BuildRequires:	imagemagick
 BuildRequires:  desktop-file-utils
 Requires:	vim-X11
 BuildArch:	noarch
-Requires(post): desktop-file-utils 
-Requires(postun): desktop-file-utils 
+Requires(post): desktop-file-utils
+Requires(postun): desktop-file-utils
 
 %description
 Cream is a modeless GUIification of Vim.  Cream includes all the features of
@@ -47,7 +47,7 @@ cp docs-html/*.html %buildroot/%_datadir/vim/cream/docs-html/
 ##cp docs-html/*.css %buildroot/%_datadir/vim/cream/docs-html/
 cp docs-html/*.png %buildroot/%_datadir/vim/cream/docs-html/
 cp filetypes/*.vim %buildroot/%_datadir/vim/cream/filetypes/
-cp help/*.txt %buildroot/%_datadir/vim/cream/help/  
+cp help/*.txt %buildroot/%_datadir/vim/cream/help/
 #cp spelldicts/cream-spell-dict-eng-s*.vim %buildroot/%_datadir/vim/cream/spelldicts/
 #cp spelldicts/cream-spell-dict.vim %buildroot/%_datadir/vim/cream/spelldicts/
 
@@ -63,6 +63,7 @@ cp cream.desktop %buildroot/%_datadir/applications/
 #menu
 
 desktop-file-install --vendor="" \
+  --remove-key="XClassHintResName" \
   --remove-category="Application" \
   --add-category="TextEditor" \
   --add-category="X-MandrivaLinux-MoreApplications-Editors" \
@@ -83,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %post
 %update_menus
 %endif
-		
+
 %if %mdkversion < 200900
 %postun
 %clean_menus
