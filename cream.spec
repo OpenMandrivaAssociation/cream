@@ -100,3 +100,71 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%name.png
 
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.42-2mdv2011.0
++ Revision: 610171
+- rebuild
+
+* Wed Dec 30 2009 J茅r么me Brenier <incubusss@mandriva.org> 0.42-1mdv2010.1
++ Revision: 483858
+- new bugfix version 0.42
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.41-2mdv2010.0
++ Revision: 437145
+- rebuild
+
+* Wed Feb 18 2009 J茅r么me Soyer <saispo@mandriva.org> 0.41-1mdv2009.1
++ Revision: 342436
+- New upstream release
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - drop old menu
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Jun 11 2007 J茅r么me Soyer <saispo@mandriva.org> 0.39-1mdv2008.0
++ Revision: 38005
+- Fix Build
+- New release
+
+
+* Sat Dec 30 2006 J茅r么me Soyer <saispo@mandriva.org> 0.38-1mdv2007.0
++ Revision: 102731
+- Fix buildrequires
+- New release 0.38
+- Import cream
+
+* Thu Sep 14 2006 Nicolas L閏ureuil <neoclust@mandriva.org> 0.36-2mdv2007.0
+- XDG
+
+* Tue Jun 13 2006 Charles A Edwards <eslrahc@mandriva.org> 0.36-1mdv2007.0
+- 0.36
+- mkrel
+- .css docs no longer done
+
+* Fri Apr 07 2006 Austin Acton <austin@mandriva.org> 0.35-1mdk
+- New release 0.35
+
+* Sat Feb 18 2006 Austin Acton <austin@mandriva.org> 0.34-1mdk
+- New release 0.34
+
+* Fri Nov 04 2005 Austin Acton <austin@mandriva.org> 0.33.1-1mdk
+- New release 0.33.1
+
+* Fri Oct 07 2005 Austin Acton <austin@mandriva.org> 0.33-1mdk
+- New release 0.33
+
+* Mon Feb 07 2005 Austin Acton <austin@mandrake.org> 0.32-1mdk
+- initial package
+
