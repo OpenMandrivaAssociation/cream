@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		%{name}-%{version}.tar.bz2
-URL:		http://cream.sourceforge.net/
+URL:		https://cream.sourceforge.net/
 License:	GPL
 Group:		Editors
 
